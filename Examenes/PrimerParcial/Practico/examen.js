@@ -57,7 +57,7 @@ rl.question("Welcome, choose an option: \n1.- Pendings(ID's) \n2.- Pendings(ID's
             axios.get(url).then(({data}) => {
                 data.forEach(element => {
                     console.log("ID: " + element.id)
-                    console.log("UserID: " + element.userID + "\n")
+                    console.log("UserID: " + element.userId + "\n")
                 })
             })
             break;
@@ -68,7 +68,7 @@ rl.question("Welcome, choose an option: \n1.- Pendings(ID's) \n2.- Pendings(ID's
                     if(element.completed)
                     {
                     console.log("ID: " + element.id)
-                    console.log("UserID: " + element.userID + "\n")
+                    console.log("UserID: " + element.userId + "\n")
                     }
                 })
             })
@@ -80,7 +80,7 @@ rl.question("Welcome, choose an option: \n1.- Pendings(ID's) \n2.- Pendings(ID's
                     if(!element.completed)
                     {
                     console.log("ID: " + element.id)
-                    console.log("UserID: " + element.userID + "\n")
+                    console.log("UserID: " + element.userId + "\n")
                     }
                 })
             })
